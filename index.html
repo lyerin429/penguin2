@@ -29,23 +29,22 @@
     <!--스크립트-->
     <script>
       let pics = document.getElementsByClassName('pic');
-      //.pic인 요소들을 가져와 변수 pics에 저장(=querySelectorAll('.pic')도 가능)
+      //.pic인 요소들을 가져와 변수 pics에 저장 (=querySelectorAll('.pic')도 가능)
       let lightbox = document.getElementById('lightbox');
       let lightboxImage = document.getElementById('lightboxImage');
-       
-      //for(초기화; 식(어디까지); 증감);
-      for(i=0;i<pics.length;i++){
-        pics[i].addEventListener('click',shadowLightbox);
+
+      for(i=0; i<pics.length; i++) {
+        pics[i].addEventListener('click', showLightbox);
       }
-      function shadowLightbox(){
+      function showLightbox(){
         let bigImg = this.getAttribute('data-src'); //this.data-src;
         lightboxImage.setAttribute('src', bigImg);
-        lightbox.style.display = 'block';
+        lightbox.style.display='block';
       }
 
-      //click 이벤트가 발생했을 때 실행할 함수 선언
-      lightbox.onclick=function(){
-        lightbox.style.display = 'none';
+      //click이벤트가 발생했을 때 실행할 함수 선언
+      lightbox.onclick = function(){
+        lightbox.style.display='none';
       }
     </script>
   </body>
