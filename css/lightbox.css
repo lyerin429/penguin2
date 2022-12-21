@@ -8,7 +8,7 @@
           padding:0;
         }
         .row ul li {
-          display:inline-table;        
+          display:inline-table;      
 				}
         li>img{
           border-radius : 10px;
@@ -17,11 +17,8 @@
 				
         /* 라이트 박스 스타일 */
         #lightbox {
-          position: fixed;  /* 위치 고정 */
-          width:100%;  /* 너비 */
-          height:100%;  /* 높이 */
-          top:0;  /* 시작 위치 - 위쪽 끝 */
-          left:0; /* 시작 위치 - 왼쪽 끝 */ 
+          width:640px;  /* 너비 */
+          height:420px;  /* 높이 */
         }
 
       /* 라이트 박스 안의 이미지 */
@@ -31,4 +28,5 @@
           left:50%;  /* 왼쪽에서 50% 부터 */
           transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */    
           border-radius : 10px;
+          margin: 40px auto;
         }
